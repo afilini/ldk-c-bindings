@@ -34,6 +34,7 @@ rm -rf lightning-c-bindings/src
 
 mkdir -p lightning-c-bindings/src/{c_types,lightning}
 mv ./mod.rs lightning-c-bindings/src/c_types/
+mv ./mapping.rs lightning-c-bindings/src/c_types/
 
 # Finally, run the c-bindings-gen binary, building fresh bindings.
 OUT="$(pwd)/lightning-c-bindings/src"
