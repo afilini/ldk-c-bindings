@@ -1320,7 +1320,6 @@ fn convert_file<'a, 'b>(libast: &'a FullLibraryAST, crate_types: &CrateTypes<'a>
 			writeln!(out, "#![allow(unused_braces)]").unwrap();
 			writeln!(out, "#![deny(missing_docs)]").unwrap();
 			writeln!(out, "pub mod c_types;").unwrap();
-			writeln!(out, "pub mod bitcoin;").unwrap();
 		} else {
 			writeln!(out, "\nuse std::ffi::c_void;\nuse bitcoin::hashes::Hash;\nuse crate::c_types::*;\n").unwrap();
 		}
